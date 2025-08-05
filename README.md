@@ -42,3 +42,4 @@
 * `git commit -m '기록메시지'`
 * `git push origin main`
 * 필요시 중간 점검용으로 `git log` 또는 `git status`
+.adfa
