@@ -89,3 +89,28 @@
 * `git clone 주소 붙혀넣기`
 ### gitHub 수정 된 작업물 내려받기
 * `git pull origin main`
+---
+# CSS
+## 캐스케이딩 스타일 시트(폭포 단계별로 작성하는 CSS)
+### CSS 기초 작성 순서
+1. `styles/reset.css` 파일만들기
+2. html파일 head 안 `link:css` 자동완성 작성하고 위 1번 파일 연결하기
+3. (html 작성 완료 기준) 부모->자식 순서대로 모든 선택자 작성하기 `{}` 중괄호 비운 상태로
+4. 모든 선택자 작성 후 `{속성:값;}` 추가로 작성하며 디자인 진행하기
+## 250813 CSS 개념
+### 선택자{속성:값;}
+* `선택자` CSS로 디자인 하는 대상
+* `{}` 속성과 값을 묶어주는 CSS 디자인 괄호
+* `속성` 선택자에 적용하는 속성
+* `값` 속성 값
+* `;` 앞 속성값이 여기서 종료했다는 것을 의미
+* ex)선택자{속성:값; 속성:값; 속성:값;}
+### 색상속성 `color` `background-color`
+* `h1#heading{color:red;}` #는 id를 의미
+* `h1.title{color:red;}` .은 class을 의미
+### CSS childeren
+* `div a{color:red;}` div 에 있는 자식부터 자손까지 모든 a를 인식
+* `div>a{color:red;}` div의 자식 a만 인식
+### CSS sibling
+* `.parent h1+p{color:pink;}` h1의 인접형제 p만 선택
+* `.parent h1~p{color:yellow;}` h1뒤에 있는 모든 p를 선택
