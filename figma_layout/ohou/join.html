@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | 오늘의 집</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/login.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="오늘의 집"></a></h1>
+        <h1>회원가입</h1>
+        <h2>SNS계정으로 간편하게 회원가입</h2>
+        <div class="sns_login">
+            <a href="#"><img src="./images/facebook.png" alt="페이스북 아이디로 회원가입"></a>
+            <a href="#"><img src="./images/kakao.png" alt="카카오톡 아이디로 회원가입"></a>
+            <a href="#"><img src="./images/naver.png" alt="네이버 아이디로 회원가입"></a>
+        </div>
+        <form action="#" method="post" id="join_frm">
+            <fieldset class="contents">
+                <legend>가입정보</legend>
+                <!-- <input type="" name="" id="" class="" placeholder=""> input복붙용-->
+                <dl class="info">
+                    <!-- -------------------------------1.이메일------------------------------------ -->
+                    <dt>이메일</dt>
+                    <dd><input type="text" name="email" id="email" class="input_de" placeholder="이메일"></dd>
+                    <dd>@</dd>
+                    <dd>
+                        <select>
+                            <option value="#">선택해주세요</option>
+                        </select>
+                    </dd>
+                    <!-- -------------------------------2.비밀번호------------------------------------ -->
+                    <dt>비밀번호</dt>
+                    <dd>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</dd>
+                    <dd><input type="password" name="pw" id="pw" class="input_de"></dd>
+                    <!-- -------------------------------3.비밀번호확인------------------------------------ -->
+                    <dt>비밀번호확인</dt>
+                    <dd><input type="password" name="pw_chk" id="pw_chk" class="input_de" placeholder="비밀번호"></dd>
+                    <!-- -------------------------------4.닉네임------------------------------------ -->
+                    <dt>닉네임</dt>
+                    <dd>다른 유저와 겹치지 않도록 입력해주세요.(2-20자)</dd>
+                    <dd><input type="text" name="nickname" id="nickname" class="input_de" placeholder="별명 (2-20자)"></dd>
+                </dl>
+            </fieldset>
+            <fieldset class="law">
+                <legend>가입약관</legend>
+            </fieldset>
+            <p><button type="submit" id="join_btn">회원가입</button></p>
+        </form>
+        <h2>이미 아이디가 있으신가요?<a href="./login.html">로그인</a></h2>
+    </div>
+</body>
+</html>
