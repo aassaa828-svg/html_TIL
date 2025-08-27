@@ -1,0 +1,33 @@
+/* inner */
+#wrap main {}
+#wrap main .inner {}
+#wrap main .inner a {}
+#wrap main .inner img {}
+/* entry */
+#wrap main .entry {}
+#wrap main .entry h2 {}
+#wrap main .entry p {}
+/* entry_contents(공통) */
+#wrap main .entry_contents {}
+/* entry_contents------------mision------- */
+#wrap main .entry_contents .mision {}
+#wrap main .entry_contents .mision p {}
+/* entry_contents------------vision_2025------- */
+#wrap main .entry_contents .vision_2025 {}
+#wrap main .entry_contents .vision_2025 h3 {}
+#wrap main .entry_contents .vision_2025 p {}
+/* entry_contents------------vision------- */
+#wrap main .entry_contents .vision {}
+#wrap main .entry_contents .vision h3 {}
+#wrap main .entry_contents .vision p {}
+/* entry_contents------------goal------- */
+#wrap main .entry_contents .goal {}
+#wrap main .entry_contents .goal h3 {}
+#wrap main .entry_contents .goal p {}
+#wrap main .entry_contents .goal p img {}
+/* entry_contents------------strategy------- */
+#wrap main .entry_contents .strategy {}
+#wrap main .entry_contents .strategy ul {}
+#wrap main .entry_contents .strategy ul li {}
+#wrap main .entry_contents .strategy ul li h4 {}
+#wrap main .entry_contents .strategy ul li p {}
