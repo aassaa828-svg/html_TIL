@@ -95,7 +95,6 @@
 /* 1행 & 2행 좌우 버튼 */
 #wrap main .visual_wrap .prev_next_wrap,
 #wrap main .news_notice_wrap .prev_next_wrap {
-    background:aqua;
     display:flex; flex-flow:row nowrap;
     justify-content:center;
     gap:24px; padding:40px 0;
@@ -114,13 +113,12 @@
 #wrap main .news_notice_wrap .prev_next_wrap .prev{}
 /* 2행 시작 */
 #wrap main .news_notice_wrap {
-    background:lime;
     padding:50px 0 0;
     display:flex; flex-flow:column nowrap;
     align-items:center;
 }
-#wrap main .news_notice_wrap > * {border:1px solid red;}
-#wrap main .news_notice_wrap > *:nth-child(odd) {background: beige;}
+/* #wrap main .news_notice_wrap > * {border:1px solid red;} */
+/* #wrap main .news_notice_wrap > *:nth-child(odd) {background: beige;} */
 #wrap main .news_notice_wrap h2 {
     font-size:var(--text-subtitle40);
     font-weight:var(--weight-bold);
@@ -131,7 +129,6 @@
     margin:20px 0 80px;
 }
 #wrap main .news_notice_wrap .card_wrap {
-    background:pink;
     width:var(--width-desktop);
     overflow:hidden;
 }

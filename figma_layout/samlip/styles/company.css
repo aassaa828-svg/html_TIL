@@ -1,33 +1,75 @@
 /* inner */
-#wrap main {}
-#wrap main .inner {}
-#wrap main .inner a {}
+#wrap main {background:var(--color-grayfc); width:100vw; margin:0 auto;}
+#wrap main .inner {text-align:end; padding:20px 0;}
+#wrap main .inner a {
+    font-size:var(--text-sub12);
+}
 #wrap main .inner img {}
+#wrap main .inner .current {font-size:var(--text-sub12);}
+
 /* entry */
-#wrap main .entry {}
-#wrap main .entry h2 {}
-#wrap main .entry p {}
+#wrap main .entry {
+    text-align:center;
+    padding:54px 0;
+    background:var(--color-white);
+}
+#wrap main .entry h1 {font-size:var(--text-title70); margin:0 0 30px;}
+#wrap main .entry > p {font-size:var(--text-contents21); margin:0 0 26px; color:var(--color-gray80);}
 /* entry_contents(공통) */
-#wrap main .entry_contents {}
+#wrap main .entry_contents {text-align:center;}
+/* #wrap main .entry_contents *:nth-child(odd) {background:aqua;} */
+#wrap main .entry_contents div {margin:108px 0;}
+/* #wrap main .entry_contents h2::before {content:'test'; background:red; width:1140px; display:block; margin:0 auto;} */
+#wrap main .entry_contents h2 {
+    border-top:1px solid var(--color-grayd); margin:0 auto;
+    font-size:var(--text-contents21);
+    font-weight:var(--weight-medium);
+    color:var(--color-point);
+    margin-bottom:26px;
+    padding-top:54px;
+}
 /* entry_contents------------mision------- */
 #wrap main .entry_contents .mision {}
-#wrap main .entry_contents .mision p {}
+#wrap main .entry_contents .mision > p {
+    font-size:var(--text-menu18);
+    font-weight:var(--weight-medium);
+    margin:0 0 26px;
+}
 /* entry_contents------------vision_2025------- */
 #wrap main .entry_contents .vision_2025 {}
-#wrap main .entry_contents .vision_2025 h3 {}
-#wrap main .entry_contents .vision_2025 p {}
+#wrap main .entry_contents .vision_2025 > h2 {}
+#wrap main .entry_contents .vision_2025 > p {
+    font-size:var(--text-contents32);
+    font-weight:var(--weight-medium);
+}
 /* entry_contents------------vision------- */
 #wrap main .entry_contents .vision {}
-#wrap main .entry_contents .vision h3 {}
-#wrap main .entry_contents .vision p {}
+#wrap main .entry_contents .vision > h2 {}
+#wrap main .entry_contents .vision > p {
+    font-size:var(--text-contents32);
+    font-weight:var(--weight-medium);
+}
 /* entry_contents------------goal------- */
 #wrap main .entry_contents .goal {}
-#wrap main .entry_contents .goal h3 {}
-#wrap main .entry_contents .goal p {}
-#wrap main .entry_contents .goal p img {}
+#wrap main .entry_contents .goal > h2 {}
+#wrap main .entry_contents .goal .goal_list {display:flex; flex-flow:row nowrap; justify-content:center;}
+#wrap main .entry_contents .goal .goal_list li {margin-left:-25px;}
+#wrap main .entry_contents .goal .goal_list li:nth-child(1) {background:var(--color-point);}
+#wrap main .entry_contents .goal .goal_list li:nth-child(1) img {filter:invert(1)}
+#wrap main .entry_contents .goal .goal_list li:nth-child(2) {background:var(--color-white);}
+#wrap main .entry_contents .goal .goal_list li:nth-child(2) img {}
+#wrap main .entry_contents .goal .goal_list li:nth-child(3) {background:var(--color-point2);}
+#wrap main .entry_contents .goal .goal_list li:nth-child(3) img {filter:invert(1)}
+#wrap main .entry_contents .goal .goal_list li {width:250px; height:250px; border-radius: 125px; box-shadow:0 0 4px rgba(0,0,0,0.25);}
+#wrap main .entry_contents .goal .goal_list li img {padding-top:82px; margin-bottom:15px;}
+#wrap main .entry_contents .goal .goal_list li span {display:block; font-size:var(--text-contents21); font-weight:var(--weight-medium);}
 /* entry_contents------------strategy------- */
 #wrap main .entry_contents .strategy {}
-#wrap main .entry_contents .strategy ul {}
-#wrap main .entry_contents .strategy ul li {}
-#wrap main .entry_contents .strategy ul li h4 {}
-#wrap main .entry_contents .strategy ul li p {}
+#wrap main .entry_contents .strategy .strategy_list {display:flex; flex-flow:row nowrap; justify-content:center;}
+#wrap main .entry_contents .strategy .strategy_list li {
+    width:180px; height:180px; background:var(--color-grayd); 
+    border-radius:90px; margin-left:-5px; box-shadow:0 0 4px rgba(0,0,0,0.25);
+    padding:0 10px;
+}
+#wrap main .entry_contents .strategy .strategy_list li h3 {font-size:var(--text-menu18); font-weight:var(--weight-bold); text-decoration:underline; margin:50px 0 10px;}
+#wrap main .entry_contents .strategy .strategy_list li > p {line-height:var(--line-contents2); color:var(--color-gray80);}
