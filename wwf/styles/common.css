@@ -1,0 +1,68 @@
+/* 공통변수 */
+:root {
+    /* 색상 */
+    --color-black:#000000;
+    --color-white:#FFFFFF;
+    --color-gray-f5:#F5F5F5;
+    --color-point-orange1:#FF7300;
+    --color-point-orange2:#F39300;
+    /* 글꼴(desktop) */
+    --main-title70-d:4.375rem;
+    --main-subtitle55-d:3.438rem;
+    --main-content20-d:1.25rem;
+    --main-boost34-d:2.125rem;
+    --main-faq26-d:1.625rem;
+    /* 글꼴(tablet) */
+    --main-title50-t:3.125rem;
+    --main-subtitle40-t:2.5rem;
+    --main-content16-t:1.0rem;
+    --main-boost22-t:1.375rem;
+    --main-faq20-t:1.25rem;
+    /* 글꼴(mobile) */
+    --main-title30-mobile:1.875rem;
+    --main-subtitle25-mobile:1.563rem;
+    --main-content14-mobile:0.875rem;
+    --main-boost22-m:1.375rem;
+    --main-faq20-m:1.25rem;
+    /* 행간, 자간, 굵기 */
+    --line150:1.5;
+    --line130:1.3;
+    --letter-minus2:-0.02rem;
+    --weight-medium:500;
+    --weight-semi-bold:600;
+    --weight-bold:700;
+}
+/* 공통 common.css */
+#wrap .bg {
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+#wrap .bg .container {
+    max-width:1250px; min-width:320px;
+    height:100vh; margin:0 auto;
+    /* background:rgba(255,255,0,0.5);테스트용 */
+    padding:80px 0 0; overflow:hidden;
+}
+#wrap .bg .container .boost_btn {
+    width:386px; height:64px; padding:15px 60px;
+    background:linear-gradient(90deg, var(--color-point-orange2),var(--color-point-orange1));
+    border-radius:177px;
+    color:var(--color-white);
+    font-size:var(--main-boost34-d); font-weight:var(--weight-medium);
+    letter-spacing:var(--letter-minus2);
+    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;
+}
+#wrap .bg .container .boost_btn img {}
+#wrap .bg .container h2 {
+    text-align:center;
+    font-size:var(--main-title70-d);
+    font-weight:var(--weight-medium);
+    line-height:var(--line130);
+    letter-spacing:var(--letter-minus2);
+    margin-bottom:50px;
+}
+#wrap .bg .container h2+p {
+    font-size:var(--main-content20-d);
+    line-height:var(--line150);
+}

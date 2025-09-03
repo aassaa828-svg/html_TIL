@@ -1,0 +1,185 @@
+#wrap {}
+/* --------------------------------------------1행 */
+#wrap .row1 {
+    background-image:url(../images/main_bg.png);
+    position:relative;
+}
+#wrap .row1::after {
+    content:""; display:block; 
+    position:absolute;
+    width:100%; height:100%;
+    left:0; top:0;
+    background:linear-gradient(transparent, rgba(0,0,0,0.8));
+    z-index:100;/* position 선택속성 */
+}
+#wrap .row1 #visual {position:relative; z-index:200;}
+#wrap .row1 #visual .logo {}
+#wrap .row1 #visual .logo a {}
+#wrap .row1 #visual .logo a img {width:100px; height:100px;}
+#wrap .row1 #visual .title {
+    color:var(--color-white);
+    font-size:var(--main-title70-d);
+    line-height:var(--line130);
+    letter-spacing:var(--letter-minus2);
+    text-align:center;
+    margin:100px 0;
+}
+#wrap .row1 #visual .title em {font-weight:var(--weight-medium);}
+#wrap .row1 #visual .boost_btn {margin:0 auto 100px;}
+#wrap .row1 #visual .faq_btn {
+    width:441px; height:46px; padding:10px 30px;
+    background:var(--color-black); color:var(--color-white);
+    border-radius:277px;
+    color:var(--color-white);
+    font-size:var(--main-faq26-d); font-weight:var(--weight-medium);
+    letter-spacing:var(--letter-minus2);
+    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;
+    gap:15px; position:absolute; right:0;
+}
+#wrap .row1 #visual .faq_btn img {width:24px; height:24px;}
+#wrap .row1 #visual .faq_btn span {}
+/* --------------------------------------------2행 퀴즈 */
+#wrap .row2 {background-image:url(../images/quiz_bg.png);}
+#wrap .row2 #quiz {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    height:max-content; padding-bottom:130px;
+}
+/* #wrap .row2 #quiz > * {border:1px solid red;} */
+#wrap .row2 #quiz .quiz_list {color:var(--color-white);}
+#wrap .row2 #quiz .quiz_list h2 {}
+#wrap .row2 #quiz .quiz_list p {margin-bottom:20px;}
+#wrap .row2 #quiz .quiz_list #quiz_frm {}
+#wrap .row2 #quiz .quiz_list #quiz_frm .list {}
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li {padding-bottom:20px;}
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li input[id^=q] {display:none;}
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li input[id^=q]:checked + label {
+    background-image:url(../images/check_on.png);
+}
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li label {
+    background-image:url(../images/check_off.png);
+    background-repeat:no-repeat;
+    background-size:32px;
+    padding-left:42px;
+    line-height:30px;
+    display:inline-block;
+}
+#wrap .row2 #quiz .quiz_list #quiz_frm button {
+    width:500px; height:60px; padding:15px 15px;
+    background:var(--color-black); color:var(--color-white);
+    border-radius:355px;
+    color:var(--color-white);
+    font-size:var(----main-content20-d);
+    letter-spacing:var(--letter-minus2);
+    display:flex; flex-flow:row nowrap; justify-content:center; 
+    align-items:center;
+}
+#wrap .row2 #quiz .quiz_result {
+    border-radius:10px;
+    background:var(--color-white);
+    height:230px; width:500px;
+    margin:69px 0 0 251px;
+}
+#wrap .row2 #quiz .quiz_result .status {
+    text-align:center;
+}
+#wrap .row2 #quiz .quiz_result .status dt {
+    background:linear-gradient(90deg, var(--color-point-orange2),var(--color-point-orange1));
+    color:var(--color-white);
+    height:72px;
+    font-size:var(--main-subtitle25-m);
+    letter-spacing:var(--line130);
+    padding:20px 0;
+    display:flex; flex-flow:row nowrap; align-items:flex-end; justify-content:center;
+    gap:10px;
+    border-radius:10px 10px 0 0 ;
+}
+#wrap .row2 #quiz .quiz_result .status dt img {
+    width:24px; height:24px;
+}
+#wrap .row2 #quiz .quiz_result .status dd {margin-top:40px;}
+#wrap .row2 #quiz .quiz_result .status dd,
+#wrap .row2 #quiz .quiz_result .status dd span {
+    font-size:var(--main-subtitle40-t);
+    font-weight:var(--weight-bold);
+    letter-spacing:var(--letter-minus2);
+}
+#wrap .row2 #quiz .quiz_result .status dd span {color:var(--color-point-orange2);}
+#wrap .row2 #quiz .quiz_result .status dd em {
+    font-size:var(--main-subtitle55-d);
+    font-weight:var(--weight-bold);
+    letter-spacing:var(--letter-minus2);
+    color:var(--color-point-orange2);
+}
+#wrap .row2 #quiz .quiz_result p {
+    float:right; 
+    margin:80px 0 0;
+    color:var(--color-white);
+}
+/* --------------------------------------------3행 동영상 */
+#wrap .row3 {background-image:url(../images/video_bg.png);}
+#wrap .row3 #story {display:flex; flex-flow:column nowrap; align-items:center;}
+#wrap .row3 #story h2 {}
+#wrap .row3 #story iframe {width:538px; height:361px; margin:20px 0;}
+#wrap .row3 #story a {}
+#wrap .row3 #story a img {}
+/* --------------------------------------------4행 빙하면적감소 */
+#wrap .row4 {background-image:url(../images/50_bg.png);}
+#wrap .row4 #wwf_msg1 {color:var(--color-white)}
+#wrap .row4 #wwf_msg1 h2 {text-align:left;}
+#wrap .row4 #wwf_msg1 h2 span {}
+#wrap .row4 #wwf_msg1 h2 em span {color:var(--color-black); 
+    font-weight:var(--weight-bold); z-index:11; position:relative;}
+#wrap .row4 #wwf_msg1 h2 em {position:relative;
+}
+#wrap .row4 #wwf_msg1 h2 em::after {
+    content:""; display:inline-block; background:var(--color-white); position:absolute; left:0; top:0; width:100%; height:100%;
+    z-index:10;
+}
+#wrap .row4 #wwf_msg1 h2+p {margin:20px 0;}
+#wrap .row4 #wwf_msg1 p img{width:100%; height:476px;}
+/* --------------------------------------------5행 빙하가 녹으면 */
+#wrap .row5 {background-color:var(--color-gray-f5);}
+#wrap .row5 #wwf_msg2 { text-align:center;}
+#wrap .row5 #wwf_msg2 h2 {}
+#wrap .row5 #wwf_msg2 h2+p {margin-bottom:50px;}
+#wrap .row5 #wwf_msg2 .msg_card_wrap {
+    display:grid; 
+    grid-template-columns:repeat(3, 1fr); 
+    gap:20px;}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li {}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li:nth-child(1) dl {background-image:url(../images/card_crisis_001.png);}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li:nth-child(2) dl {background-image:url(../images/card_crisis_002.png);}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li:nth-child(3) dl {background-image:url(../images/card_crisis_003.png);}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li dl:after {
+    background:linear-gradient(var(--color-black), transparent); content:''; display:block; position:absolute; left:0; top:0; width:100%; height:100%;
+
+}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li dl {
+    width:400px; height:320px;
+    background-repeat:no-repeat;
+    position:relative;
+    z-index:20;
+}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li dl dt {
+    color:var(--color-white);
+    font-size:var(--main-subtitle40-t);
+    font-weight:var(--weight-bold);
+    letter-spacing:var(--letter-minus2);
+    padding-top:50px;
+    position:relative;
+    z-index:30;
+}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li dl dd {
+    color:var(--color-white);
+    padding-top:10px;
+    position:relative;
+    z-index:30;
+    }
+#wrap .row5 #wwf_msg2 .msg_card_wrap li p {
+    padding:30px 10px 70px;
+    background:var(--color-white);
+    font-size:var(----main-content20-d);
+    line-height:var(--line150);
+    letter-spacing:var(--letter-minus2);
+}
