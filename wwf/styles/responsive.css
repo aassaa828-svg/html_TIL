@@ -1,0 +1,115 @@
+/* ----------------------태블릿 */
+@media screen and (max-width:1250px){
+    /* ------------------------t1250 1행 */
+    #wrap .bg .container {padding:155px 80px 0;} /* 전체 너비가 가변형, 좌우 여백 80px */
+    #wrap .row1 #visual .title {font-size:var(--main-title50-t);}
+    #wrap .row1 #visual .logo a img {width:90px; height:90px;}
+    #wrap .row1 #visual .faq_btn {
+        width:max-content; padding:10px 30px;
+        border-radius:277px;
+        gap:15px;
+        font-size:var(--main-faq20-t);
+    }
+    /* ------------------------t1250 2행 */
+    #wrap .bg .container h2 { /* h2 공통 */
+        text-align:center;
+        font-size:var(--main-subtitle40-t);
+        font-weight:var(--weight-bold);
+        line-height:var(--line130);
+        letter-spacing:var(--letter-minus2);
+        margin-bottom:30px;
+    }
+    #wrap .bg .container h2+p { /* p 공통 */
+        font-size:var(--main-content16-t);
+        line-height:var(--line150);
+        letter-spacing:var(--letter-minus2);
+    }
+    #wrap .row2 #quiz {display:flex; flex-flow:column; justify-content:center; align-items:center;
+    }
+    #wrap .row2 #quiz .quiz_result .status dt {font-size:var(--main-boost22-t);}
+    #wrap .row2 #quiz .quiz_result .status dd,
+    #wrap .row2 #quiz .quiz_result .status dd span {
+        font-size:var(--main-boost34-d);
+        font-weight:var(--weight-bold);
+    }
+    #wrap .row2 #quiz .quiz_result .status dd {padding:0 121.5px;}
+    #wrap .row2 #quiz .quiz_result {margin-top:76px;}
+    #wrap .row2 #quiz .quiz_result p {}
+    #wrap .row2 #quiz .quiz_list #quiz_frm button {width:1  00%;}
+    
+    /* ------------------------t1250 3행 */
+    /* ------------------------t1250 4행 */
+    #wrap .row4 #wwf_msg1 h2 br {display:none;}
+    /* ------------------------t1250 5행 */
+    #wrap .row5 #wwf_msg2 .msg_card_wrap li p {
+        max-height:100px;
+        /* 여러줄 말줄임(...)처리 */
+        overflow:hidden;
+        display:-webkit-box;/* 브라우저엔진 -webkit- */
+        -webkit-line-clamp:3;/* 몇줄 초과시 말줄임처리 */
+        -webkit-box-orient: vertical;/* 글 방향 */
+        text-overflow:ellipsis;/* 말줄임 속성 */
+    }
+#wrap .row5 #wwf_msg2 h2+p br {display:none;}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li {
+    background:var(--color-white);
+    padding-bottom:30px;
+}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li dl dt {
+    font-size:var(--main-subtitle25-m);
+    font-weight:var(--weight-bold);
+    }
+#wrap .row5 #wwf_msg2 .msg_card_wrap li p {
+    font-size:var(----main-content16-t);
+    }
+#wrap .row5 #wwf_msg2 .msg_card_wrap li dl {
+    height:289px;
+    }
+}
+/* end 1250 */
+/* ---------------------모바일 */
+@media screen and (max-width:1024px) {
+/* -------------------------m1024-------------공통 */
+#wrap .bg .container {padding:100px 15px 0;}
+#wrap .bg .container h2 {font-size:var(--main-subtitle25-m);}
+/* -------------------------m1024-------------1행 */
+#wrap .row1 #visual .title {font-size:var(--main-title30-m);}
+/* 이미지의 폭 변경 시 이미지 태그는 100%, 필요한 경우 부모(블록)에만 px */
+#wrap .row1 #visual .logo {width:80px; height:80px;}
+#wrap .row1 #visual .logo a img {width:100%; height:100%;}
+#wrap .row1 #visual .faq_btn {
+    width:max-content; padding:10px 10px;
+    border-radius:277px;
+    gap:15px;
+    font-size:var(--main-faq20-t);
+    }
+#wrap .bg .container .boost_btn {
+    width:100%; height:54px;
+    font-size:var(--main-boost22-m);
+    }
+/* -------------------------m1024-------------2행 */
+#wrap .row2 #quiz .quiz_list {width:100%; text-align:margin-left:20px;}
+#wrap .row2 #quiz .quiz_result .status {margin-bottom:30px;}
+#wrap .row2 #quiz .quiz_result .status dt {font-size:var(--main-faq20-m);}
+#wrap .row2 #quiz .quiz_result .status dd em {font-size:var(--main-title30-m);}
+#wrap .row2 #quiz .quiz_result .status dd,
+#wrap .row2 #quiz .quiz_result .status dd span {
+    font-size:var(--main-boost22-m);
+    font-weight:var(--weight-bold);
+    }
+#wrap .row2 #quiz .quiz_result .status dd {padding:0 67px;}
+#wrap .row2 #quiz .quiz_result {height:180px;}
+#wrap .row2 #quiz .quiz_list #quiz_frm button {width:100%;}
+/* -------------------------m1024-------------3행 */
+#wrap .row3 #story iframe {width:100%; height:476px; margin:20px 0px;}
+/* -------------------------m1024-------------4행 */
+#wrap .row4 #wwf_msg1 p img{width:100%;}
+/* -------------------------m1024-------------5행 */
+#wrap .row5 #wwf_msg2 .msg_card_wrap {
+    display:flex; flex-flow:column; justify-content:center; align-items:center; 
+    }
+#wrap .row5 #wwf_msg2 {height:100%;}
+#wrap .row5 #wwf_msg2 .msg_card_wraip li {background-size:cover;}
+#wrap .row5 #wwf_msg2 .msg_card_wrap li p {text-align:start;}
+}
+/* end 1024 */

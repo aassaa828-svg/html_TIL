@@ -22,7 +22,7 @@
     line-height:var(--line130);
     letter-spacing:var(--letter-minus2);
     text-align:center;
-    margin:100px 0;
+    margin:100px 0;         
 }
 #wrap .row1 #visual .title em {font-weight:var(--weight-medium);}
 #wrap .row1 #visual .boost_btn {margin:0 auto 100px;}
@@ -34,7 +34,7 @@
     font-size:var(--main-faq26-d); font-weight:var(--weight-medium);
     letter-spacing:var(--letter-minus2);
     display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;
-    gap:15px; position:absolute; right:0;
+    gap:15px; float:right;
 }
 #wrap .row1 #visual .faq_btn img {width:24px; height:24px;}
 #wrap .row1 #visual .faq_btn span {}
@@ -65,7 +65,8 @@
     display:inline-block;
 }
 #wrap .row2 #quiz .quiz_list #quiz_frm button {
-    width:500px; height:60px; padding:15px 15px;
+    width:500px;
+    padding:15px;
     background:var(--color-black); color:var(--color-white);
     border-radius:355px;
     color:var(--color-white);
@@ -77,8 +78,7 @@
 #wrap .row2 #quiz .quiz_result {
     border-radius:10px;
     background:var(--color-white);
-    height:230px; width:500px;
-    margin:69px 0 0 251px;
+    height:230px;
 }
 #wrap .row2 #quiz .quiz_result .status {
     text-align:center;
@@ -137,7 +137,7 @@
     z-index:10;
 }
 #wrap .row4 #wwf_msg1 h2+p {margin:20px 0;}
-#wrap .row4 #wwf_msg1 p img{width:100%; height:476px;}
+#wrap .row4 #wwf_msg1 p img{width:100%;}
 /* --------------------------------------------5행 빙하가 녹으면 */
 #wrap .row5 {background-color:var(--color-gray-f5);}
 #wrap .row5 #wwf_msg2 { text-align:center;}
@@ -146,7 +146,8 @@
 #wrap .row5 #wwf_msg2 .msg_card_wrap {
     display:grid; 
     grid-template-columns:repeat(3, 1fr); 
-    gap:20px;}
+    gap:20px;
+}
 #wrap .row5 #wwf_msg2 .msg_card_wrap li {}
 #wrap .row5 #wwf_msg2 .msg_card_wrap li:nth-child(1) dl {background-image:url(../images/card_crisis_001.png);}
 #wrap .row5 #wwf_msg2 .msg_card_wrap li:nth-child(2) dl {background-image:url(../images/card_crisis_002.png);}
@@ -156,7 +157,7 @@
 
 }
 #wrap .row5 #wwf_msg2 .msg_card_wrap li dl {
-    width:400px; height:320px;
+    height:320px;
     background-repeat:no-repeat;
     position:relative;
     z-index:20;
@@ -175,6 +176,9 @@
     padding-top:10px;
     position:relative;
     z-index:30;
+    font-size:var(----main-content20-d);
+    line-height:var(--line150);
+    letter-spacing:var(--letter-minus2);
     }
 #wrap .row5 #wwf_msg2 .msg_card_wrap li p {
     padding:30px 10px 70px;
