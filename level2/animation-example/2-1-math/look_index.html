@@ -22,7 +22,8 @@
         main #visual {background:#26bad7; min-width:1200px; margin:0 auto; height:550px; position:relative;}
         main #visual #deco {position:relative; width:1200px; margin:0 auto;}
         main #visual #deco .obj {position:absolute;}
-
+        /* main #visual #deco .obj:nth-child(odd) {animation:rotate 3s linear infinite alternate;} */
+        /* main #visual #deco .obj:nth-child(even) {animation:scale 1s linear infinite alternate;} */
         main #visual #deco .obj1 {
             top:170px; left:50%; margin-left:-342px;
         }
@@ -50,7 +51,6 @@
         main #visual #deco .obj9 {
             right:0; top:440px;
         }
-
         main #book_center {
             position:absolute; 
             left:50%; bottom:-50px; margin-left:-181px;
@@ -67,9 +67,29 @@
             text-align:center; background:#f1f1f1; color:#222;
         }
         main .category a.active {background:#26bad7; color:#fff;}
-
+        /* scale 애니메이션 선택*/
+        main #visual #deco .obj2,
+        main #visual #deco .obj4,
+        main #visual #deco .obj7,
+        main #visual #deco .obj9
+        {animation:scale 3s linear infinite alternate;}
+        /* rotate 애니메이션 선택 */
+        main #visual #deco .obj1,
+        main #visual #deco .obj3,
+        main #visual #deco .obj6,
+        main #visual #deco .obj8
+        {animation:rotate 3s linear infinite alternate;}
+        main #visual #deco .obj5
+        {animation:rotate 3s linear infinite alternate-reverse;}
         /* 애니메이션 */
-
+        @keyframes rotate {
+            0% {transform:rotate(0deg);}
+            100% {transform:rotate(20deg);}
+        }
+        @keyframes scale {
+            0% {transform:scale(1);}
+            100% {transform:scale(1.8);}
+        }
     </style>
 </head>
 <body>

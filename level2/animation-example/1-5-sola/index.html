@@ -30,11 +30,19 @@
             text-align:center; color:#fff;
             font-size:3rem; letter-spacing:-1px;
             position:relative; top:400px;
+            animation:txt 1.5s ease both;
         }
         /* class */
-
+        .slide_wrap .slide_c {animation:bg 1s ease both;}
         /* animation */
-
+        @keyframes bg {
+            0% {background-size:100% auto;}
+            100% {background-size:120% auto;}
+        }
+        @keyframes txt {
+            0% {opacity:0; transform:translateY(0) scale(1);}
+            100% {opacity:1; transform:translateY(-30px) scale(1.2);}
+        }
     </style>
     <script>
         window.onload=function(){
